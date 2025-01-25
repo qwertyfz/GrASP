@@ -1,0 +1,7 @@
+useracct
+logging
+page
+recentchanges
+revision
+text
+watchlist
