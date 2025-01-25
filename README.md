@@ -26,9 +26,11 @@ Combining the idea of logical block addresses (LBA) delta modelling and semantic
     python3 -m Backend.Models.GrASP
     ```
 A more detailed execution command example is:
+
     ```sh
     python3 -m Backend.Models.GrASP --Database="wiki_sf100_1" --predModel="_multiLSTM" --GPU="1" --focalConfig --alpha=0.75 --gamma=3 --dcCount=1500 --grasp --binary_delta --planType="qjsn" --qjson --k=100 --dynTBThresh --skip --epochs=25 --ftuneQC=5000 --ftuneEpch=25 --addDeltaCls
     ```
+    
 7. **Test GrASP** - Configure the test settings, such as cache size and prefetch size. This will load the model trained in the previous step and utilize it to make predictions on a provided workload.
 8. **Test results** - All test results can be found in the Results folder and can be accessed to generate plots.
 9. (optional) **Baseline prefetchers** - The baselilne prefetchers described in the paper have been implemented and can be tested by running the `main.py` and `selep_main.py` files.
